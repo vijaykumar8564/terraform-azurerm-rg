@@ -14,6 +14,6 @@ provider "azurerm" {
 }
 module "ResourceGroup" {
     source = "./ResourceGroup"
-    rg-name = "terraform-test"
-    rg-location = "South India"
+    rg-name = var.base-name
+    rg-location = var.base-location
 }
